@@ -6,6 +6,7 @@ import { validate, completedForm, getIdArray } from "../../services/form";
 import { CgDanger } from "react-icons/cg";
 import Logo from "../../images/logo.svg";
 import "./Form.css";
+import { urlApi } from "../../constants";
 
 const Form = () => {
   const [temperaments, setTemperaments] = useState([]);
@@ -70,7 +71,7 @@ const Form = () => {
   }, [dispatch, options]);
 
   function createDoggie(dog) {
-    fetch("http://localhost:3001/api/dog", {
+    fetch(`${urlApi}api/dog`, {
       method: "POST",
       headers: {
         Accept: "application/json",

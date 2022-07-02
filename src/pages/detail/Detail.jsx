@@ -7,6 +7,7 @@ import {
   getDogsAsync,
 } from "../../redux/dogSlice";
 import "./Detail.css";
+import { urlApi } from "../../constants";
 
 const Detail = () => {
   const params = useParams();
@@ -20,7 +21,7 @@ const Detail = () => {
   const dogDetail = useSelector((state) => state.dogs.dogDetail);
 
   function deleteDog(id) {
-    fetch(`http://localhost:3001/api/dog/${id}`, {
+    fetch(`${urlApi}api/dog/${id}`, {
       method: "DELETE",
     })
       .then(() => {

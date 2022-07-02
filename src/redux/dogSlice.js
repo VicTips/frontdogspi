@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { urlApi } from "../constants";
 
 export const dogSlice = createSlice({
   name: "dogs",
@@ -51,7 +52,7 @@ export const {
 } = dogSlice.actions;
 
 export const getDogsAsync = () => (dispatch) => {
-  fetch("http://localhost:3001/api/dog")
+  fetch(`${urlApi}api/dog`)
     .then((res) => res.json())
     .then((json) => {
       dispatch(getDogs(json));
@@ -60,7 +61,7 @@ export const getDogsAsync = () => (dispatch) => {
 };
 
 export const searchDogsAsync = (name) => (dispatch) => {
-  fetch(`http://localhost:3001/api/dog?name=${name}`)
+  fetch(`${urlApi}api/dog?name=${name}`)
     .then((res) => res.json())
     .then((json) => {
       dispatch(getDogs(json));
@@ -69,7 +70,7 @@ export const searchDogsAsync = (name) => (dispatch) => {
 };
 
 export const dogDetailAsync = (id) => (dispatch) => {
-  fetch(`http://localhost:3001/api/dog/${id}`)
+  fetch(`${urlApi}api/dog/${id}`)
     .then((res) => res.json())
     .then((json) => {
       dispatch(getDetail(json));
@@ -78,7 +79,7 @@ export const dogDetailAsync = (id) => (dispatch) => {
 };
 
 export const getTemperamentsAsync = () => (dispatch) => {
-  fetch("http://localhost:3001/api/temperament/")
+  fetch(`${urlApi}api/temperament/`)
     .then((res) => res.json())
     .then((json) => {
       dispatch(getTemperaments(json));
