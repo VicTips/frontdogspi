@@ -1,0 +1,57 @@
+.dogCard {
+  text-decoration: none;
+  width: 20rem;
+  background-color: white;
+  border-radius: 0.8rem;
+  transition: transform 0.2s;
+  height: 25.5rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.dogCard:hover {
+  transform: scale(1.05);
+}
+
+.cardImgContainer {
+  height: 13rem;
+}
+
+.dogCard img {
+  border-top-right-radius: 0.8rem;
+  border-top-left-radius: 0.8rem;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+
+.cardTitle {
+  background-color: rgb(225, 73, 25);
+  color: white;
+  position: relative;
+  bottom: 1.9rem;
+}
+
+.cardTitle h3 {
+  margin: 0;
+  text-align: start;
+  margin-left: 1rem;
+}
+
+.dogCard h4 {
+  margin: 0;
+  text-align: start;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  color: darkblue;
+}
+
+.dogCard p {
+  text-align: start;
+  margin: 0;
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+  margin-top: 0.2rem;
+  color: darkblue;
+}

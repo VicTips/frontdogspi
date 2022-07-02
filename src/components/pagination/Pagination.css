@@ -1,0 +1,33 @@
+.pagination {
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.pagination button {
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  color: darkblue;
+  background-color: transparent;
+  border-radius: 0.3rem;
+  font-size: 1.05rem;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #ddd;
+  border: none;
+  border-radius: 0.3rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  transform: scale(1.05);
+}
+
+.btnSelected {
+  background-color: rgb(225, 73, 25) !important;
+  color: white !important;
+  border-radius: 0.3rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}

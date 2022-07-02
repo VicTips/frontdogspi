@@ -1,0 +1,126 @@
+.dogDetailCard {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 3rem;
+  padding-top: 1rem;
+  border: 4px solid rgb(225, 73, 25);
+  border-radius: 2rem;
+  background-color: rgb(213, 220, 226, 0.85);
+  box-shadow: rgb(37, 37, 37) 0px 0px 16px;
+}
+
+.dogDetailCard img {
+  border-radius: 2rem;
+  max-height: 25rem;
+}
+
+.dogImageAndInformation {
+  max-height: 25rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.detailPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.dogInformationContainer {
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.dogInformation {
+  gap: 1rem;
+}
+
+.dogInformation p {
+  margin: 0;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  text-align: start;
+}
+
+.dogName {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: rgb(65, 10, 119);
+}
+
+.subheading {
+  font-size: 1.4rem !important;
+  margin-bottom: 0 !important;
+  font-weight: 600;
+  color: darkblue;
+}
+
+.goBackBtn {
+  background-color: rgb(65, 10, 119);
+  border: none;
+  text-decoration: none;
+  border-radius: 1rem;
+  padding: 0.5rem 3rem;
+  font-size: 1.1rem;
+  color: white;
+  margin-top: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.goBackBtn:hover {
+  background-color: rgb(88, 44, 132);
+}
+
+.spinnerWhite {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: white;
+  display: inline-flex;
+
+  animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.deleteBtn {
+  background-color: rgb(225, 73, 25);
+  border: none;
+  border-radius: 1rem;
+  padding: 0.5rem 3rem;
+  font-size: 1.1rem;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.deleteBtn:hover {
+  background-color: rgb(246, 92, 45);
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
